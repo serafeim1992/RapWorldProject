@@ -1,0 +1,135 @@
+.news{
+   
+    &__box{
+        display: flex;
+        width: 100%;
+        margin-right: 3rem;
+        padding: .2rem;
+        height: 20rem;
+        border: .5rem solid #000;
+        transform: skewX(-10deg);
+        cursor: pointer;
+        transition: all .3s ;
+
+       
+
+        &:hover{
+        transform: skewX(-10deg) translateY(-2px);
+        border: .5rem solid #00e6ff;
+        box-shadow: 0rem 3rem 6rem;
+        }
+    }
+
+    &__image{
+   //  background-color: black;
+     background: url('../img/deniro.jpg');
+     background-size: cover;
+     background-position: center;
+    // clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+   // clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 19%, 8% 0);
+   clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 100%, 15% 0);
+     transform: skewX(7deg);
+     width: 30%;
+     
+
+    }
+
+    &__text{
+// background-color: green;
+transform: skewX(10deg);
+// clip-path: polygon(100% 0, 98% 44%, 75% 100%, 0% 100%, 0 19%, 0 0);
+width: 70%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+
+
+&--paragraph{
+    font-size: 1.8rem;
+    padding: 1.5rem 1rem;
+    margin-bottom: 1rem;
+}
+
+    }
+//////////////////////////////////////////////////
+
+&__box2{
+    display: flex;
+        width: 100%;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        padding: .2rem;
+        height: 20rem;
+        border: .5rem solid #000;
+        transform: skewX(-10deg);
+        cursor: pointer;
+        transition: all .3s ;
+
+        &:hover{
+        transform: skewX(-10deg) translateY(-2px);
+        border: .5rem solid #00e6ff;
+        box-shadow: 0rem 3rem 6rem;
+        }
+}
+
+    &__image2{
+       
+        width: 30%;
+        background: url('../img/madchild1.jpg');
+        background-size: cover;
+        background-position: center;
+       // clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+      // clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 19%, 8% 0);
+      clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 100%, 15% 0);
+        transform: skewX(7deg);
+    
+
+       
+   
+       }
+   
+       &__text2{
+  // background-color: green;
+transform: skewX(10deg);
+// clip-path: polygon(100% 0, 98% 44%, 75% 100%, 0% 100%, 0 19%, 0 0);
+width: 70%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+
+
+&--paragraph{
+    font-size: 1.8rem;
+    padding: 1.5rem 1rem;
+    margin-bottom: 1rem;
+}
+
+       }
+}
+
+.news__image3{
+    width: 30%;
+    background: url('../img/high-focus.jpg');
+    background-size: cover;
+    background-position: center;
+   // clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  // clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 19%, 8% 0);
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 100%, 15% 0);
+    transform: skewX(7deg);
+}
+
+.news__image4{
+    width: 30%;
+    background: url('../img/ocean.jpg');
+    background-size: cover;
+    background-position: center;
+   // clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  // clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 19%, 8% 0);
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 100%, 15% 0);
+    transform: skewX(7deg);
+}
+

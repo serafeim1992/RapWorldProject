@@ -1,0 +1,273 @@
+.interviews{
+  display: flex;
+ // background-color: tomato; 
+  min-height: 20rem;
+  margin: 4rem 1rem;
+  padding: 1rem 2rem;
+
+  @media only screen and (max-width:37.5em){
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  &__first{
+   // background-color: violet;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   background: url('../img/merkules.jpg');
+   background-position: center;
+   background-size: cover;
+    width: 30%;
+    height: 25rem;
+    position: relative;
+    top: 0;
+    left: 22.7rem; //21
+    border: 4px solid #000;
+    clip-path: polygon(0% 0%, 100% 0, 50% 50%, 100% 100%, 0% 100%);
+    transition:all .8s ease-out;
+    cursor: pointer;
+
+
+
+  @media only screen and (max-width:37.5em){
+    flex-direction: column;
+    align-items: center;
+    left:0;
+    clip-path: polygon(0% 0%, 100% 0, 105% 69%, 100% 100%, 0% 100%);
+    width: 70rem;
+    height: 33rem;
+    margin-bottom: 3rem;
+    border: 2px solid #000;
+  }
+
+
+    &:hover{
+      clip-path: polygon(0% 0%, 100% 0, 105% 69%, 100% 100%, 0% 100%);
+      z-index: 1;
+      border: 4px solid aqua;
+    }
+
+  }
+
+
+  &__second{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background:url('../img/fourowls.jpg');
+   // filter: contrast(0.5);
+   // outline-offset: .5rem;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+     top:0;
+     right: 0;
+    width: 40%;
+    height: 25rem;
+   clip-path: polygon(50% -18%, 100% 50%, 50% 118%, 0% 50%);
+    transition: all 1s ease-out;
+    cursor: pointer;
+
+
+    @media only screen and (max-width:37.5em){
+      flex-direction: column;
+      align-items: center;
+      clip-path: polygon(0% 0%, 100% 0, 105% 69%, 100% 100%, 0% 100%);
+      width: 70rem;
+      height: 33rem;
+      margin-bottom: 3rem;
+      border: 2px solid #000;
+    }
+
+    &:hover{
+    //  filter: none;
+      border: 4px solid aqua;
+      //outline: .5rem solid black;
+     clip-path: polygon(50% -460%, 100% -54%, 142% 424%, -22% 50%);
+      z-index: 1;
+    }
+  }
+
+  &__third{
+    //background-color: yellowgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url('../img/snak2.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    right: 22.7rem;
+    width: 30%;
+    height: 25rem;
+    border: 4px solid black;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 50% 50%);
+    transition:all .8s ease-out;
+    cursor: pointer;
+
+  
+
+  @media only screen and (max-width:37.5em){
+    flex-direction: column;
+    align-items: center;
+    clip-path: polygon(0% 0%, 100% 0, 105% 69%, 100% 100%, 0% 100%);
+    right: 0;
+    width: 70rem;
+    height: 33rem;
+    margin-bottom: 3rem;
+    border: 2px solid #000;
+  }
+
+
+    &:hover{
+      border: 4px solid aqua;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0% 50%);
+      z-index:1;
+    }
+  }
+
+
+}
+
+
+///////////////////////////////////////////SECOND ROW/////////////////////////////////////////////////////
+
+
+.secondRow{
+display: flex;
+//background-color: tomato; 
+min-height: 40rem;
+margin: -5rem 1rem;
+padding: 1rem 2rem;
+
+
+
+
+@media only screen and (max-width:37.5em){
+  flex-direction: column;
+  align-items: center;
+  margin-right: 0;
+}
+
+
+&__first{
+ // background-color: blue;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ background: url('../img/apollo.jpg');
+ background-size: cover;
+  width: 30%;
+  height: 25rem;
+  clip-path: polygon(0% 0%, 33% 0, 100% 100%, 26% 100%, 0% 100%);
+  border: 4px solid black;
+  position: relative;
+  left:  30.3rem;//28.8rem;
+  transition:all .8s ease-out; 
+  cursor: pointer;
+
+  
+
+
+@media only screen and (max-width:37.5em){
+  flex-direction: column;
+  align-items: center;
+  clip-path: polygon(0% 0%, 100% 0, 105% 69%, 100% 100%, 0% 100%);
+  left: 0;
+  width: 70rem;
+  height: 33rem;
+  margin-bottom: 3rem;
+  border: 2px solid #000;
+}
+
+  &:hover{
+    clip-path: polygon(0% 0%, 100% 0, 100% 100%, 26% 100%, 0% 100%);
+    z-index: 1;
+    border: 4px solid aqua;
+  }
+}
+
+&__second{
+ // background-color: violet;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ background: url('../img/djpremier.jpg');
+ background-size: cover;
+ background-position: top;
+  width: 40%;
+  height: 25rem;
+  position: relative;
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  border:4px solid black;
+  transition:all .8s ease-out;
+  cursor: pointer;
+
+
+  
+
+ 
+
+
+  @media only screen and (max-width:37.5em){
+    flex-direction: column;
+    align-items: center;
+    clip-path: polygon(0% 0%, 100% 0, 105% 69%, 100% 100%, 0% 100%);
+    left: 0;
+    width: 70rem;
+    height: 33rem;
+    margin-bottom: 3rem;
+    border: 2px solid #000;
+  }
+
+
+  &:hover{
+    clip-path: polygon(50% 150%, -300% 0%, 400% 0);
+    z-index: 1;
+    border: 4px solid aqua;
+  
+  }
+}
+
+&__third{
+  //background-color: yellowgreen;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: url('../img/shahmen.jpg');
+  background-size: cover;
+  width: 30%;
+  height: 25rem;
+  position: relative;
+  right:  30.3rem;//28.8rem;
+  clip-path: polygon(66% 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+  border:4px solid black;
+  transition:all .8s ease-out;
+  cursor: pointer;
+
+
+
+@media only screen and (max-width:37.5em){
+  flex-direction: column;
+  align-items: center;
+  clip-path: polygon(0% 0%, 100% 0, 105% 69%, 100% 100%, 0% 100%);
+  right: 0;
+  width: 70rem;
+  height: 33rem;
+  margin-bottom: 3rem;
+  border: 2px solid #000;
+}
+
+
+  &:hover{
+    clip-path: polygon(0% 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+    z-index: 1;
+    border: 4px solid aqua;
+  }
+}
+
+}
+
+

@@ -1,0 +1,161 @@
+//$fontHeader :'Permanent Marker', cursive;
+
+.header-primary{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 8rem;
+    text-align: center;
+   border-bottom: 0.5rem solid #00e6ff;
+   border-radius: 3px;
+   margin-bottom: 0.5rem;
+   -webkit-text-stroke: 1px #000;
+   color: #fff;
+text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, 
+-2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, 
+-4px 3px #cdd2d5, -4px 5px #808d93,
+ -5px 4px #cdd2d5, -5px 6px #808d93,
+  -6px 5px #cdd2d5, -6px 7px #808d93,
+   -7px 6px #cdd2d5, -7px 8px #808d93, -8px 7px #cdd2d5;
+   transition: all 2s ;
+
+
+   @media only screen and (max-width:75em){
+         font-size:9.3rem;
+
+    }
+
+
+    @media only screen and (max-width:37.5em){
+     font-size: 8rem;
+      margin-left: 2rem;
+ }
+
+
+  
+
+    &:hover{
+        transform: rotate3d(39, 29, 56, -382deg);
+box-shadow: 5px 5px 0px 0px #289FED,
+ 10px 10px 0px 0px #5FB8FF,
+  15px 15px 0px 0px #A1D8FF, 
+  20px 20px 0px 0px #CAE6FF, 
+  25px 25px 0px 0px #E1EEFF,
+   5px 5px 15px 5px rgba(0,0,0,0);
+       }
+
+
+}
+
+
+.heading-secondary{
+    font-size: 7rem;
+    font-weight: 300;
+    font-family: 'Permanent Marker', cursive;;
+    -webkit-text-stroke: 4px black;
+    color: #fff;
+    text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, 
+-2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, 
+-4px 3px #cdd2d5, -4px 5px #808d93,
+ -5px 4px #cdd2d5, -5px 6px #808d93,
+  -6px 5px #cdd2d5, -6px 7px #808d93,
+   -7px 6px #cdd2d5, -7px 8px #808d93, -8px 7px #cdd2d5;
+   transition: all 2s;
+
+   @media only screen and (max-width:48em){
+    -webkit-text-stroke: 3px black ;
+}
+   &:hover{
+   // transform: rotate3d(23, 80, 6, 360deg);     
+    transform: rotate3d(39, 29, 56, -382deg);
+   }
+    
+}
+
+
+.heading-tertiary{
+    text-transform: uppercase;
+    font-size: 2rem;
+    align-self: flex-start;
+    border-bottom: 3px solid #00cee5;
+
+    @media only screen and (max-width:37.5em){
+      margin-top: 2rem;
+    }
+
+}
+
+.heading__interview{
+  text-align: center;
+  font-family:'Permanent Marker', cursive; ;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #000;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px white;
+
+  @media only screen and (max-width:75em){
+    font-size: 2.5rem;
+    -webkit-text-stroke: 1px white;
+  }
+  @media only screen and (max-width:37.5em){
+    font-size: 4rem;
+    -webkit-text-stroke: 1px white;
+  }
+  
+}
+
+.heading__left{
+    font-family:'Permanent Marker', cursive; ;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #000;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px white;
+
+    @media only screen and (max-width:75em){
+        font-size: 2.5rem;
+        -webkit-text-stroke: 1px white;
+      }
+
+      @media only screen and (max-width:37.5em){
+        font-size: 4rem;
+        -webkit-text-stroke: 1px white;
+      }
+    
+}
+
+.heading__right{
+    text-align: right;
+    font-family:'Permanent Marker', cursive; ;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #000;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px white;
+
+    @media only screen and (max-width:75em){
+        font-size: 2.5rem;
+        -webkit-text-stroke: 1px white;
+      }
+
+      @media only screen and (max-width:37.5em){
+        font-size: 4rem;
+        -webkit-text-stroke: 1px white;
+      }
+    
+}
+
+
+.text__interview{
+  //  margin-top: 12rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: white;
+    transition:all .4s;
+    background: rgba(0, 0, 0, 0.699);
+
+
+    @media only screen and (max-width:37.5em){
+      font-size: 2.5rem;
+     
+    }
+}

@@ -1,0 +1,93 @@
+.footer{
+    height: 12.5rem;
+    background: linear-gradient(to right top, #2ac0d1, #00e6ff, #63efff);
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    @media only screen and (max-width:37.5em){ 
+        margin-top: 3rem;
+       
+      }
+
+
+    &__text{
+        margin-top: 10rem;
+        font-size: 2rem;
+    margin-right: -15rem;
+
+    @media only screen and (max-width:83.75em){
+        margin-right: -15rem;
+    }
+
+
+    @media only screen and (max-width:75em){
+    margin-top: 9rem;
+    font-size: 2rem;
+    margin-right:-15rem;
+   }
+
+  
+
+}
+    
+
+    &__social{
+    width: 5rem;
+    font-size: 4rem;
+    margin-right: 10rem;
+   display: flex;
+   
+   justify-content: space-between;
+     
+
+   &--facebook{
+     color: #000;
+     margin-right: 1rem;
+     &:hover{
+         animation: glitchy .3s infinite;
+         
+     }
+   }
+
+
+       &--instagram{
+        color: #000;
+
+        &:hover{
+            animation: glitchy .2s infinite;
+        }
+
+       } 
+
+       &--youtube{
+        color: #000;
+        margin-left: 1rem;
+
+        &:hover{
+            animation: glitchy .2s  infinite;
+        }
+       }
+    }
+}
+
+@keyframes glitchy{
+    0%{
+        text-shadow: 5px 4px #fff, -5px -6px aqua;
+    }
+    25%{
+        text-shadow: -5px 4px #ffffff, 5px 4px aqua;
+    }
+    50%{
+    text-shadow: 5px -4px #fff, -8px 4px aqua;
+    }
+    75%{
+        text-shadow: -8px -4px #000000, -5px -4px aqua;
+    }
+    100%{
+        text-shadow: -5px 0 #000000, 5px -4px aqua;
+    }
+    }
+    
+    

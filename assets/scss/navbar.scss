@@ -1,0 +1,303 @@
+////////// LOGO
+.logo{
+    width: 24%;
+    justify-content: start;
+    margin-bottom: 6rem;
+    margin-right: 62rem;
+
+    
+       @media only screen and (max-width:37.5em){
+        margin-right: 30rem;
+        width: 40%;
+     }
+}
+
+
+//////////////////////////////////////////////// NAVIGATION BUTTON
+
+.user-nav{
+//background-color: blueviolet;
+width: 3rem;
+padding: 2rem 3rem;
+margin-left: 3rem;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+flex-direction: column;
+cursor: pointer;
+transition: all .3s;
+
+@media only screen and (max-width:48em){
+    margin-left: 6rem;
+
+   
+}
+
+&:hover{
+    transform: scale(1.1);
+    box-shadow: 0rem 2rem 8rem rgba($color: #000000, $alpha: 1.0);
+    border-radius: 30%;
+
+    
+   
+}
+
+    &__button{
+         background-color: #000;
+         border-radius: .5rem;
+         width: 2rem;
+         height: .4rem;
+         cursor: pointer;
+         transition: all .5s ease-in-out;
+         z-index: 9999999;
+
+         @media only screen and (min-width:160em){
+           width: 3rem;
+        }
+        
+        
+        
+      
+    }
+
+    &__button::before{
+        content: "";        
+        position: absolute;
+        background-color: #000;
+        border-radius: .5rem;
+        width: 5rem;
+        height: .4rem;
+        transform: translate(-14px,-9px);
+        transition: all .5s ease-in-out;
+       
+       
+
+        @media only screen and (min-width:160em){
+            transform: translate(-14px,-13px);
+         }
+         @media only screen and (max-width:48em){    
+            transform: translate(-8px,-10px);
+             }
+
+         @media only screen and (max-width:37.5em){
+            transform: translate(-7px,-7px);
+         }
+       
+    }
+
+
+    &__button::after{
+        content: "";        
+        position: absolute;
+        background-color: #000;
+        border-radius: .5rem;
+        width: 5rem;
+        height: .4rem;
+        transform: translate(-14px,9px);
+        transition: all .5s ease-in-out;
+
+      
+
+        @media only screen and (min-width:160em){
+            transform: translate(-14px,14px);
+         }
+        
+         @media only screen and (max-width:48em){    
+        transform: translate(-8px,10px);
+         }
+         @media only screen and (max-width:37.5em){
+            transform: translate(-7px,7px);
+         }
+        
+    }
+
+}
+//////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////Navigation LINKS
+
+.navigation{
+  display:flex;
+  //justify-content:center;
+  align-items:center;
+  position: absolute;
+  top: 8.3rem;
+  height:78rem;
+  width:100%;
+  background-color: black;
+  visibility: hidden;
+  pointer-events: none;
+  font-family: 'Permanent Marker', cursive;
+ // clip-path: polygon(0 7%, 40% 0, 100% 94%, 0% 94%);
+//clip-path: polygon(0 6%, 41% 0, 100% 98%, 0% 97%);
+clip-path: polygon(0 6%, 42% 0, 100% 91%, 0% 91%);
+  z-index: 99999999;
+
+
+
+ 
+  
+    
+
+  
+  @media only screen and (max-width:87.5em){
+    clip-path: polygon(0 6%, 44% 0, 100% 92%, 0% 91%);
+}
+
+ 
+@media only screen and (max-width:83.75em){
+    clip-path: polygon(0 6%, 46% 0, 100% 89%, 0% 89%);
+    margin-top: -.5rem;
+}
+
+@media only screen and (max-width:75em){
+    clip-path: polygon(0 7%, 48% 0, 100% 91%, 0% 93%);
+    margin-top: -1.5rem;
+
+}
+@media only screen and (max-width:63.75em){
+    top: 7rem;
+    clip-path: polygon(0 7%, 45% 0, 100% 91%, 0% 92%);
+  }
+@media only screen and (max-width:56.25em){
+  top: 8rem;
+    clip-path: polygon(0 7%, 48% 0, 100% 91%, 0% 92%);
+}
+ @media only screen and (max-width:37.5em){
+          top: 8rem;
+      clip-path: polygon(0 7%, 50% 0, 100% 91%, 0% 92%);
+  }
+  
+
+
+
+ 
+  &__list{
+  list-style:none;
+  visibility:hidden;  
+  
+  ///
+  perspective: 80rem;
+  
+  }
+  
+     &__item{
+ font-size:8.5rem;
+   margin-top:1rem;
+   margin-left: 7rem;
+   font-weight:900;
+     transition: all .5s ease-in-out;  
+     
+       transform: rotateY(33deg);
+       
+       
+       @media only screen and (max-width:83.75em){
+        margin-top: 0;
+    }
+
+       @media only screen and (max-width:75em){
+           font-size: 8rem;
+           margin-top:2rem;
+           margin-left: 5rem;
+       }
+
+
+       
+       &:hover{
+   transform:rotateY(0);
+        }
+  }
+  
+  &__link,
+  &__link:visited{
+    text-transform:uppercase;
+    text-decoration:none;
+    -webkit-text-stroke: 2px #fff ;
+    color:transparent;
+    transition:all .9s ease-in;
+   
+    @media only screen and (max-width:48em){
+        -webkit-text-stroke: 1px #fff ;
+    }
+    
+    &:hover{
+      
+   background-image:linear-gradient(to right,cyan,black);
+    -webkit-background-clip:text;
+    color:transparent;
+    }
+  }
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Dynamic class for Js Toggle
+
+.user-nav.open__menu .user-nav__button{ 
+    transform: translate(-50px);
+    background: transparent;
+}
+
+.user-nav.open__menu .user-nav__button::before{
+
+    transform: rotate(45deg) translate(2.5rem,-2.5rem);
+}
+
+.user-nav.open__menu .user-nav__button::after{
+    transform: rotate(-45deg) translate(2.5rem, 2.5rem);
+}
+
+
+.navigation-open{
+    visibility: visible;
+    pointer-events: all;
+    animation: navigation-animation .8s ease-in-out;
+}
+
+.navigation-ul{
+    visibility: visible;
+    pointer-events: all;
+    animation: listItems .8s ;
+    
+    
+}
+
+
+/////////////////////////////////////////ANIMATIONS
+
+@keyframes listItems {
+    0%{
+         opacity: 0;
+         transform: translateX(-1rem); 
+    }
+
+    50%{
+         opacity: .5;
+         transform: translateX(3.5rem);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+@keyframes navigation-animation{
+    0%{
+        opacity: 0;
+        
+    }
+
+     50%{
+         opacity: .5;
+
+     }
+
+    100%{
+       opacity: 1;
+    }
+}

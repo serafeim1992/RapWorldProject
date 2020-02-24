@@ -1,0 +1,222 @@
+.container{
+    min-height: 120rem;
+margin: 1.2rem;
+background-color:#fff ; 
+
+box-shadow: 0 2rem 6rem rgba(0,0,0,0.3);
+
+
+ @media only screen and (max-width:75em){
+    margin:0;
+ }
+
+
+}
+.header{
+    height: 12.5rem;
+    background: linear-gradient(to right top, #2ac0d1, #00e6ff, #63efff);
+    clip-path: polygon(100% 0, 100% 0, 0 100%, 0 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+   
+
+}
+.home-section{
+display: flex;
+
+    &__text{
+        width:50%;
+        // margin-top: -6rem;
+        // margin-left: 3rem;
+        
+    }
+
+    &__video{
+        width: 72%;
+        opacity: 0.5;
+        margin-top: -14rem;
+        height: 80rem;
+        clip-path: polygon(100% 2%, 0 11%, 100% 100%);
+
+        
+
+  @media only screen and (max-width:37.5em){
+      margin-top: -15rem;
+     clip-path: polygon(100% 3%, 0 11%, 100% 100%);
+  }
+
+
+
+    }
+
+    &__content{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.next-level{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(to right top, #2ac0d1,#00e6ff,#63efff);
+    height: 11rem;
+    margin-top: -11rem;
+    clip-path: polygon(91% 0, 100% 84%, 100% 100%, 50% 100%, 0 100%, 0 0);
+
+    // @media only screen and (max-width:75em){
+    //     clip-path: polygon(92.5% 0, 100% 98%, 100% 100%, 50% 100%, 0 100%, 0 0);
+    // }
+    
+}
+
+.news{
+      display: flex;
+     align-items: center;
+  //  background-color: tomato;
+    height: 30rem;
+
+    @media only screen and (max-width:37.5em){
+        flex-direction: column;
+        margin-top: 7rem;
+        }
+    
+
+    &__content{
+        display: flex;
+        //  align-items: center;
+        justify-content: space-between;
+        
+        margin: 0 10rem;
+        padding: .5rem 1rem;
+        width: 100%;
+        height: 20rem;
+       // background-color: yellowgreen;
+    }
+
+    
+}
+
+.third-level{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(to right top, #2ac0d1,#00e6ff,#63efff);
+    height: 11rem;
+    clip-path: polygon(23% 0%, 100% 0, 100% 100%, 0 100%, 0% 99%)
+    
+    
+}
+
+
+
+///////////////////////////////////////BUTTON AFTER SCROLL/////////////////////////////////////
+
+
+
+.button{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    filter: invert(1);
+    
+    top: 15rem;
+    left: 150rem;
+    width: 7rem;
+    height: 7rem;
+    background: url('../img/button.png');
+    background-size: cover;
+    cursor: pointer;
+    transition:all 3s;
+    animation: rotateDisc 2s ease-in-out infinite;
+    visibility: hidden;
+    pointer-events: none;
+
+
+    @media only screen and (max-width:83.75em){
+       left:2rem;
+        }
+         @media only screen and (max-width:75em){
+            left:2rem;
+        }
+     @media only screen and (max-width:37.5em){
+        left: -1rem;
+    width: 15rem;
+    height: 15rem;
+z-index: 9999999;}
+
+    &:hover{
+        filter: drop-shadow(1px 3px 4px rgba(0, 0, 0, 0.644));
+        -webkit-animation: 0;
+       
+    }
+
+
+    &__box{
+        position: relative;
+        top:3.5rem;
+    } 
+ 
+
+    &__text{
+        font-family:'Permanent Marker', cursive;;
+            font-weight: 700;
+               font-size: 3rem;
+              color: #000;
+              text-transform: uppercase;
+              pointer-events: none;
+              
+    }
+
+}
+
+///////////js class///////////////
+
+.disc{
+    visibility: visible;
+    pointer-events: visible;
+}
+
+@keyframes rotateDisc{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+//////////////////////////////////////////////Pre-Load/////////////////////////
+.html__loading{
+    background-color: #000;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000000;
+
+
+    &--disc{
+        background: url('../img/button.png');
+        background-size: cover;
+        width: 40%;
+        height: 60rem;
+        animation: rotateDisc 3s infinite;
+
+
+         @media only screen and (max-width:37.5em){
+            height:44rem;
+            width:53%;
+         }
+    }
+ }

@@ -1,0 +1,14 @@
+{
+  "name": "project-rap",
+  "version": "1.0.0",
+  "description": "Project about rap",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass assets/scss/main.scss assets/styles/styles.css -w"
+  },
+  "author": "Serafeim Nikolaou\\",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
